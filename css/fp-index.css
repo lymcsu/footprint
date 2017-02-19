@@ -1,0 +1,68 @@
+html {
+  font-size: 62.5%;
+}
+header {
+  background: #37BC9B !important;
+  height: 6rem !important;
+}
+header a {
+  padding: 2rem !important;
+  color: #fff !important;
+}
+header h1 {
+  height: 6rem !important;
+  line-height: 6rem !important;
+  color: #fff !important;
+  font-size: 1.8rem !important;
+  font-weight: bolder !important;
+}
+
+.mui-content {
+  padding-top: 6rem !important;
+}
+
+.fp-index-main {
+  padding: 8px;
+}
+.fp-index-main #slider {
+  border-radius: 8px;
+  margin-bottom: 2.5rem;
+}
+.fp-index-main .fp-index-noteslist {
+  width: 100%;
+}
+.fp-index-main .fp-index-noteslist li {
+  width: 100%;
+  margin: 1rem 0;
+}
+.fp-index-main .fp-index-noteslist li a {
+  display: block;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.fp-index-main .fp-index-noteslist li img {
+  width: 100%;
+}
+
+.fp-sidemenu-list {
+  padding-top: 40%;
+  text-align: center;
+  width: 100%;
+}
+.fp-sidemenu-list .fp-sidemenu-item {
+  margin-bottom: 30%;
+  color: #ccc;
+  font-size: 1.2rem;
+}
+.fp-sidemenu-list .fp-sidemenu-item.active {
+  color: #fff;
+  font-size: 1.4rem;
+}
+.fp-sidemenu-list .fp-sidemenu-item.user-item div img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 2.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}

@@ -1,0 +1,33 @@
+{
+	"index.html": {
+		"resources": [
+			"css/fp-index.css",
+			"img/shuijiao.jpg",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"img/muwu.jpg",
+			"css/mui.min.css",
+			"img/yuantiao.jpg",
+			"img/cbd.jpg",
+			"css/reset.css",
+			"css/fp-common.css",
+			"js/index.js"
+		],
+		"refer": [
+			"travels.html"
+		]
+	},
+	"travels.html": {
+		"resources": [
+			"css/fp-travels.css",
+			"img/play.png",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/fp-common.css",
+			"css/mui.min.css",
+			"img/yuantiao.jpg",
+			"css/reset.css",
+			"img/muwu.jpg"
+		]
+	}
+}
