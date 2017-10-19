@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="fonts/iconfont.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link href="css/common.css" rel="stylesheet" />
+		<link href="css/personal.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<header class="fp-personal-header clear-fix mui-bar-transparent">
+			<a href="javascript:;" class="fp-personal-header-backbtn mui-action-back">
+				<i class="iconfont icon-back"></i>
+			</a>
+			<div class="fp-personal-header-morebtn">
+				<i class="iconfont icon-more"></i>
+				<ul class="fp-personal-header-morelist">
+					<li>
+						<a class="collectionLink" href="javascript:;">喜欢</a>
+					</li>
+					<!--<li>
+						<a class="commentLink href=" javascript:; ">评论</a>
+					</li>-->
+				</ul>
+			</div>
+		</header>
+		<div class="fp-personal-wrap ">
+			<div class="fp-personal-wrap-userinfo ">
+				<div class="fp-personal-wrap-userinfo-line_1 ">
+					<a href="javascript:; " class="fp-personal-wrap-userinfo-fans ">0</a>
+					<div class="fp-userpic-box ">
+						<img class="fp-userpic-img " src="" />
+					</div>
+					<a href="javascript:; " class="fp-personal-wrap-userinfo-follows ">0</a>
+				</div>
+				<p class="fp-personal-wrap-userinfo-username "></p>
+				<a href="javascript:; " class="fp-personal-wrap-userinfo-btn message "><i class="hotPoint "></i>消息</a>
+				<a href="javascript:; " class="fp-personal-wrap-userinfo-btn follow ">关注</a>
+			</div>
+		</div>
+		<div class="fp-personal-content ">
+			<h2>游记列表</h2>
+			<ul class="fp-personal-content-notelist ">
+				<!--<li>
+					<a href="notedis.html ">
+						<h3 class="fp-personal-content-notelist-title ">我的有迹故事</h3>
+						<div class="fp-personal-content-notelist-infos ">
+							<span class="fp-personal-content-notelist-view ">8</span>/
+							<span class="fp-personal-content-notelist-like ">4</span>/
+							<span class="fp-personal-content-notelist-comment ">0</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="notedis.html ">
+						<h3 class="fp-personal-content-notelist-title ">我的有迹故事</h3>
+						<div class="fp-personal-content-notelist-infos ">
+							<span class="fp-personal-content-notelist-view ">8</span>/
+							<span class="fp-personal-content-notelist-like ">4</span>/
+							<span class="fp-personal-content-notelist-comment ">0</span>
+						</div>
+					</a>
+				</li>-->
+			</ul>
+		</div>
+		<div class="fp-personal-closebg "></div>
+		<script src="js/mui.min.js "></script>
+		<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js "></script>
+		<script src="js/common.js "></script>
+		<script src="js/personal.js "></script>
+		<script type="text/javascript ">
+			mui.init({
+  				gestureConfig:{
+   					tap: true, 
+   					longtap: true
+  				}
+			});
+			$(".fp-personal-header-morebtn ").on("tap ", function() {
+				$(this).find("ul ").show(200, function() {
+					$(".fp-personal-closebg ").show().one("click ", function() {
+						$(".fp-personal-header-morelist ").hide(200);
+						$(this).hide();
+					});
+				});
+			})
+		</script>
+	</body>
+
+</html>

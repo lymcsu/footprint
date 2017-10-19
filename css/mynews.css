@@ -1,0 +1,19 @@
+.fp-message-list-like:after,
+.fp-message-list-comment:after,
+.fp-message-list-follow {
+	font-size: 14px;
+	color: #666;
+	float: left;
+}
+
+.fp-message-list-like:after {
+	content: "喜欢了你的游记";
+}
+
+.fp-message-list-comment:after {
+	content: "评论了你的游记";
+}
+
+.fp-message-list-follow:after {
+	content: "关注了你";
+}

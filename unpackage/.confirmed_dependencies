@@ -1,33 +1,340 @@
 {
-	"index.html": {
-		"resources": [
-			"css/fp-index.css",
-			"img/shuijiao.jpg",
-			"js/mui.min.js",
-			"fonts/mui.ttf",
-			"img/muwu.jpg",
-			"css/mui.min.css",
-			"img/yuantiao.jpg",
-			"img/cbd.jpg",
-			"css/reset.css",
-			"css/fp-common.css",
-			"js/index.js"
-		],
-		"refer": [
-			"travels.html"
-		]
-	},
-	"travels.html": {
-		"resources": [
-			"css/fp-travels.css",
-			"img/play.png",
-			"js/mui.min.js",
-			"fonts/mui.ttf",
-			"css/fp-common.css",
-			"css/mui.min.css",
-			"img/yuantiao.jpg",
-			"css/reset.css",
-			"img/muwu.jpg"
-		]
-	}
+  "index.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "personal.html",
+      "css/index.css",
+      "img/shuijiao.jpg",
+      "css/common.css",
+      "fonts/mui.ttf",
+      "img/muwu.jpg",
+      "img/yuantiao.jpg",
+      "img/cbd.jpg",
+      "css/reset.css",
+      "js/index.js",
+      "js/common.js",
+      "js/jquery-1.11.0.js",
+      "index_sub.html",
+      "img/logo.png"
+    ],
+    "refer": [
+      "personal.html",
+      "notedis.html",
+      "newnotes.html",
+      "userinfo.html",
+      "index_sub.html",
+      "menuLeft.html"
+    ]
+  },
+  "note-dis.html": {
+    "resources": [
+      "fonts/iconfont.css",
+      "img/soho.jpg",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "fonts/iconfont.woff",
+      "img/soho2.jpg",
+      "img/soho3.jpg",
+      "css/notedis.css",
+      "personal.html"
+    ],
+    "refer": [
+      "personal.html"
+    ]
+  },
+  "comment.html": {
+    "resources": [
+      "img/soho.jpg",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "img/soho2.jpg",
+      "css/mui.min.css",
+      "css/comment.css",
+      "css/list.css",
+      "css/common.css",
+      "img/cbd.jpg",
+      "css/reset.css",
+      "js/fanslist.js",
+      "js/common.js",
+      "js/jquery-1.11.0.js",
+      "js/comment.js"
+    ],
+    "refer": []
+  },
+  "personal.html": {
+    "resources": [
+      "fonts/iconfont.css",
+      "img/soho.jpg",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "fonts/iconfont.woff",
+      "img/bld.jpg",
+      "img/shh.jpg",
+      "img/soho2.jpg",
+      "img/soho3.jpg",
+      "css/common.css",
+      "css/personal.css",
+      "mynews.html",
+      "index.html",
+      "fanslist.html",
+      "followslist.html",
+      "note-dis.html",
+      "css/reset.css",
+      "notedis.html",
+      "js/common.js",
+      "js/personal.js",
+      "img/cbd.jpg"
+    ],
+    "refer": [
+      "mynews.html",
+      "index.html",
+      "fanslist.html",
+      "followslist.html",
+      "note-dis.html",
+      "notedis.html",
+      "newnotes.html",
+      "collectionlist.html"
+    ]
+  },
+  "mynews.html": {
+    "resources": [
+      "css/mynews.css",
+      "css/list.css",
+      "fonts/mui.ttf",
+      "personal.html",
+      "js/mynews.js",
+      "js/common.js",
+      "js/jquery-1.11.0.js",
+      "js/mui.min.js",
+      "css/common.css",
+      "css/mui.min.css",
+      "css/reset.css"
+    ],
+    "refer": [
+      "personal.html",
+      "comment.html",
+      "notedis.html",
+      "fanslist.html"
+    ]
+  },
+  "fanslist.html": {
+    "resources": [
+      "personal.html",
+      "img/bld.jpg",
+      "css/list.css",
+      "fonts/mui.ttf",
+      "js/jquery-1.11.0.js",
+      "fonts/iconfont.css",
+      "js/fanslist.js",
+      "js/common.js",
+      "js/mui.min.js",
+      "css/common.css",
+      "css/mui.min.css",
+      "css/reset.css",
+      "fonts/iconfont.woff"
+    ],
+    "refer": [
+      "personal.html"
+    ]
+  },
+  "followslist.html": {
+    "resources": [
+      "img/bld.jpg",
+      "css/list.css",
+      "css/followslist.css",
+      "personal.html",
+      "fonts/mui.ttf",
+      "index.html",
+      "js/followlist.js",
+      "fonts/iconfont.css",
+      "js/common.js",
+      "js/jquery-1.11.0.js",
+      "js/mui.min.js",
+      "css/common.css",
+      "css/mui.min.css",
+      "css/reset.css",
+      "fonts/iconfont.woff"
+    ],
+    "refer": [
+      "personal.html",
+      "index.html"
+    ]
+  },
+  "notedis.html": {
+    "resources": [
+      "fonts/iconfont.css",
+      "img/soho.jpg",
+      "css/notedis.css",
+      "img/play.png",
+      "fonts/iconfont.woff",
+      "img/soho3.jpg",
+      "personal.html",
+      "img/muwu.jpg",
+      "fonts/mui.ttf",
+      "img/yuantiao.jpg",
+      "css/common.css",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/reset.css",
+      "js/notedis.js",
+      "js/common.js",
+      "js/jquery-1.11.0.js",
+      "js/mui.zoom.js",
+      "css/imageViewer.css",
+      "js/mui.previewimage.js",
+      "fonts/iconfont.ttf",
+      "img/cbd.jpg"
+    ],
+    "refer": [
+      "personal.html",
+      "comment.html"
+    ]
+  },
+  "newnotes.html": {
+    "resources": [
+      "img/soho.jpg",
+      "js/mui.min.js",
+      "css/common.css",
+      "fonts/mui.ttf",
+      "img/soho2.jpg",
+      "css/mui.min.css",
+      "css/newnotes.css",
+      "img/shh.jpg",
+      "img/cbd.jpg",
+      "css/reset.css",
+      "img/soho3.jpg",
+      "fonts/iconfont.woff",
+      "fonts/iconfont.css",
+      "js/newnotes.js",
+      "js/jquery-1.11.0.js",
+      "js/common.js",
+      "js/exif.js",
+      "img/img1492225375414.png",
+      "img/P70403-135327.jpg",
+      "img/yuantiao.jpg",
+      "js/mui.zoom.js",
+      "css/imageViewer.css",
+      "js/mui.previewimage.js",
+      "css/app.css",
+      "css/mui.poppicker.css",
+      "js/mui.picker.js",
+      "js/mui.poppicker.js",
+      "js/city.data.js",
+      "css/mui.picker.css"
+    ],
+    "refer": [
+      "editfp.html",
+      "imageView.html"
+    ]
+  },
+  "editfp.html": {
+    "resources": [
+      "js/mui.picker.min.js",
+      "js/mui.min.js",
+      "css/common.css",
+      "fonts/mui.ttf",
+      "css/editfp.css",
+      "css/mui.min.css",
+      "css/mui.picker.min.css",
+      "css/reset.css",
+      "js/editfp.js",
+      "js/common.js",
+      "img/shh.jpg",
+      "js/jquery-1.11.0.js",
+      "rgba(0,%200,%200,%200)%20url(https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u\u003d2003109403,2807088904\u0026fm\u003d116\u0026gp\u003d0.jpg)%20no-repeat%20scroll%2050%%2050%%20/%20cover%20padding-box%20border-box",
+      "img/play.png",
+      "js/exif.js"
+    ],
+    "refer": []
+  },
+  "userinfo.html": {
+    "resources": [
+      "js/jquery-1.11.0.js",
+      "js/mui.min.js",
+      "css/common.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/userinfo.css",
+      "js/userinfo.js",
+      "img/cbd.jpg",
+      "css/reset.css",
+      "js/common.js",
+      "img/shh.jpg",
+      "img/soho.jpg"
+    ],
+    "refer": []
+  },
+  "imageView.html": {
+    "resources": [
+      "js/common.js",
+      "js/jquery-1.11.0.js",
+      "js/mui.min.js",
+      "css/common.css",
+      "css/reset.css",
+      "img/muwu.jpg",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "index_sub.html": {
+    "resources": [
+      "js/index_sub.js",
+      "css/index.css",
+      "js/jquery-1.11.0.js",
+      "js/mui.min.js",
+      "img/shuijiao.jpg",
+      "css/common.css",
+      "img/muwu.jpg",
+      "css/mui.min.css",
+      "img/yuantiao.jpg",
+      "img/cbd.jpg",
+      "css/reset.css",
+      "js/common.js",
+      "fonts/mui.ttf",
+      "img/shh.jpg",
+      "img/soho3.jpg"
+    ],
+    "refer": [
+      "notedis.html",
+      "newnotes.html"
+    ]
+  },
+  "menuLeft.html": {
+    "resources": [
+      "img/cbd.jpg",
+      "css/index.css",
+      "css/common.css",
+      "css/mui.min.css",
+      "css/reset.css",
+      "js/menuLeft.js",
+      "js/common.js",
+      "js/jquery-1.11.0.js",
+      "js/mui.min.js"
+    ],
+    "refer": [
+      "personal.html",
+      "userinfo.html"
+    ]
+  },
+  "collectionlist.html": {
+    "resources": [
+      "fonts/iconfont.css",
+      "js/common.js",
+      "css/list.css",
+      "img/soho.jpg",
+      "js/jquery-1.11.0.js",
+      "js/mui.min.js",
+      "css/common.css",
+      "css/collection.css",
+      "fonts/mui.ttf",
+      "js/collectionlist.js",
+      "css/mui.min.css",
+      "css/reset.css",
+      "fonts/iconfont.woff"
+    ],
+    "refer": [
+      "personal.html"
+    ]
+  }
 }

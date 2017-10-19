@@ -1,34 +1,127 @@
-var openWebview = function(pageUrl, pageId, styles, extras) {
-	mui.openWindow({
-		url: pageUrl,
-		id: pageId,
-		styles: styles,
-//		{
-//			top: newpage - top - position, //新页面顶部位置
-//			bottom: newage - bottom - position, //新页面底部位置
-//			width: newpage - width, //新页面宽度，默认为100%
-//			height: newpage - height, //新页面高度，默认为100%
-//			......
-//		}
-		extras: extras,
-		createNew: false, //是否重复创建同样id的webview，默认为false:不重复创建，直接显示
-		show: {
-			autoShow: true //页面loaded事件发生后自动显示，默认为true
-//			aniShow: animationType, //页面显示动画，默认为”slide-in-right“；
-//			duration: animationTime //页面动画持续时间，Android平台默认100毫秒，iOS平台默认200毫秒；
+document.addEventListener("plusready", function() {
+	if(!localStorage.getItem("userinfo")) {
+		openWebview("userinfo.html", "userinfo", {}, {
+			type: "bindInfo"
+		})
+	}
+	window.INDEX_PAGE = plus.webview.currentWebview();
+	mui.init({
+		gestureConfig: {
+			doubletap: true
 		},
-		waiting: {
-			autoShow: true, //自动显示等待框，默认为true
-			title: '正在加载...' //等待对话框上显示的提示内容
-//			options: {
-//				width: waiting - dialog - widht, //等待框背景区域宽度，默认根据内容自动计算合适宽度
-//				height: waiting - dialog - height, //等待框背景区域高度，默认根据内容自动计算合适高度
-//				......
-//			}
-		}
+		subpages: [{
+			url: 'index_sub.html',
+			id: 'index_sub',
+			styles: {
+				top: '60px',
+				bottom: '0px',
+				zindex: -1
+			}
+		}]
+	});
+	var indexFunc = new IndexFunc();
+	indexFunc.initLeftMenu();
+	indexFunc.listenOperation();
+	window.addEventListener("closeMenu", function() {
+		indexFunc.closeMenu();
 	})
+})
+var IndexFunc = function() {};
+IndexFunc.prototype = {
+	initLeftMenu: function initLeftMenu() {
+		this.menuLeft = mui.preload({
+			url: 'menuLeft.html',
+			id: 'menuLeft',
+			styles: {
+				left: "-100%",
+				zindex: -9997,
+				render: 'always'
+			}
+		});
+	},
+	showMenu: function showMenu() {
+		var self = this;
+		self.menuLeft.show('none', 0, function() {
+			self.menuLeft.setStyle({
+				left: '0',
+				width: '70%',
+				transition: {
+					duration: 100
+				}
+			});
+		});
+		// 主界面右移  
+		window.INDEX_PAGE.show('none', 0, function() {
+			window.INDEX_PAGE.setStyle({
+				mask: 'rgba(0,0,0,0.5)',
+				transition: {
+					duration: 0
+				}
+			});
+			window.INDEX_PAGE.setStyle({
+				left: '70%',
+				transition: {
+					duration: 300
+				}
+			});
+		});
+	},
+	closeMenu: function closeMenu() {
+		var self = this;
+		window.INDEX_PAGE.setStyle({
+			left: '0',
+			top: '0',
+			bottom: '0',
+			mask: 'none',
+			transition: {
+				duration: 150
+			}
+		});
+		//		window.INDEX_PAGE.setStyle({
+		//			mask: 'none',
+		//			transition: {
+		//				duration: 0
+		//			}
+		//		});
+		// 侧滑界面移出显示区域之外  
+		self.menuLeft.setStyle({
+			left: "-100%",
+			transition: {
+				duration: 300
+			}
+		});
+	},
+	listenOperation: function listenOperation() {
+		var self = this;
+		$(".mui-action-menu").on("tap", function() {
+			self.showMenu();
+		});
+		$("#placeSearch").on("tap", function() {
+			if($(this).hasClass("searching")) {
+				self.fireSearchPlace();
+			} else {
+				$(this).addClass("searching");
+				$(".header-logo").hide();
+				$(".fp-search-input").show().animate({
+					width: "80%"
+				});
+			}
+		});
+		$(".fp-search-input").on("blur", function(e) {
+			$("#placeSearch").removeClass("searching");
+			$(this).css({
+				width: 0
+			}).hide();
+			$(".header-logo").show();
+		})
+		window.INDEX_PAGE.addEventListener("maskClick", function() {
+			self.closeMenu();
+		}, false);
+	},
+	fireSearchPlace: function fireSearchPlace() {
+		var subPage = plus.webview.getWebviewById("index_sub");
+		mui.fire(subPage, "searchplace", {
+			placeName: $(".fp-search-input").val()
+		});
+	}
 }
-
-mui('body').on("tap", "#test", function(){
-	openWebview("travels.html","travels")
-});

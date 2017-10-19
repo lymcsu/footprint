@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/editfp.css" />
+		<link rel="stylesheet" href="css/mui.picker.min.css" />		
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">添加文字</h1>
+			<a class="mui-pull-right fp-editfp-finishbtn">完成</a>
+		</header>
+		<div class="fp-editfp-content">
+			<div class="fp-editfp-content-editarea clear-fix">
+				<div class="fp-editfp-content-editarea-img"></div>
+				<div class="fp-editfp-content-editarea-input">
+					<textarea placeholder="添加文字"></textarea>
+					<a class="fp-editfp-content-editarea-time"><span id="timespan"></span><i class="mui-icon mui-icon-forward"></i></a>
+				</div>
+			</div>
+			<a href="javascript:;" class="fp-editfp-content-addgeo">
+				<i class="mui-icon mui-icon-plus"></i><span>点击添加地理位置</span>
+			</a>
+			<div class="mapContainer">
+				<div id="mc"></div>
+				<div class='pop-cover'>点击后拖动标注点手动选择位置</div>
+			</div>
+			<a href="javascript:;" class="fp-deleteFootprint">删除足迹</a>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script src="js/mui.picker.min.js"></script>
+		<script src="js/jquery-1.11.0.js"></script>
+		<script src="js/common.js"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=9MUD7wxZW9b2PGTTbVrtXWEtFLc2mdwZ"></script>
+		<script src="js/editfp.js"></script>
+	</body>
+
+</html>

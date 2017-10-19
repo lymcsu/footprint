@@ -1,0 +1,50 @@
+{
+  "collectionlist.html": {
+    "href": "collectionlist.html",
+    "resources": [],
+    "refer": [],
+    "priority": 0
+  },
+  "fanslist.html": {
+    "href": "fanslist.html",
+    "resources": [],
+    "refer": [],
+    "priority": 1
+  },
+  "newnotes.html": {
+    "href": "newnotes.html",
+    "resources": [],
+    "refer": [],
+    "priority": 2
+  },
+  "followslist.html": {
+    "href": "followslist.html",
+    "resources": [],
+    "refer": [],
+    "priority": 3
+  },
+  "notedis.html": {
+    "href": "notedis.html",
+    "resources": [],
+    "refer": [],
+    "priority": 4
+  },
+  "personal.html": {
+    "href": "personal.html",
+    "resources": [],
+    "refer": [],
+    "priority": 0
+  },
+  "menuLeft.html": {
+    "href": "menuLeft.html",
+    "resources": [],
+    "refer": [],
+    "priority": 0
+  },
+  "index.html": {
+    "href": "index.html",
+    "resources": [],
+    "refer": [],
+    "priority": 0
+  }
+}

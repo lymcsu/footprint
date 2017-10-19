@@ -1,0 +1,216 @@
+html {
+	font-size: 20px !important;
+}
+
+header {
+	background: #4ABDCC !important;
+	height: 3.2rem !important;
+}
+
+header a {
+	padding: 1rem !important;
+	color: #fff !important;
+}
+
+header h1 {
+	height: 3.2rem !important;
+	line-height: 3.2rem !important;
+	text-align: center;
+}
+header h1 img{
+	display: inline-block;
+}
+.fp-index-main {
+	padding: 8px;
+}
+
+.fp-index-main #slider {
+	border-radius: 8px;
+	margin-bottom: 0.25rem;
+	height: 220px;
+}
+
+.fp-index-newnotestitle {
+	font-size: 12px;
+	color: #666;
+	text-align: center;
+	text-shadow: 1px 1px 1px #999;
+}
+
+.fp-index-title{
+	color: #FFF;
+	font-weight: 600;
+}
+
+.fp-index-main .fp-index-noteslist {
+	width: 100%;
+}
+
+.fp-index-main .fp-index-noteslist li {
+	width: 100%;
+	margin: 0.5rem 0;
+	height: 180px;
+	border-radius: 8px;
+	position: relative;
+	background-size: cover !important;
+}
+
+.fp-index-main .fp-index-noteslist li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border-radius: 8px;
+	padding: 15px;
+	position: relative;
+	z-index: 4;
+}
+
+.fp-sidemenu-list {
+	padding-top: 40%;
+	text-align: center;
+	width: 100%;
+}
+
+.fp-sidemenu-list .fp-sidemenu-item {
+	margin-bottom: 30%;
+	color: #eee;
+	font-size: 0.6rem;
+}
+
+.fp-sidemenu-item a {
+	display: block;
+}
+
+.fp-sidemenu-list .fp-sidemenu-item.active {
+	color: #fff;
+	font-size: 0.7rem;
+}
+
+.fp-index-add {
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 25px;
+	background: #4ABDCC;
+	font-size: 30px;
+	color: #fff;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 6;
+}
+
+.fp-userpic-box {
+	margin: 0 auto;	
+}
+
+.fp-index-note-title{
+	color: #fff;
+	font-size: 18px;
+}
+
+.fp-index-noteslist li:before{
+	content: '';
+	width: 100%;
+	height: 180px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: linear-gradient(to right, rgba(0,0,0,.3) , rgba(255,255,255,0.1)); /* 标准的语法 */
+	z-index: 3;
+	border-radius: 8px;
+}
+.fp-index-noteslist li a p{
+	margin-bottom: 10px;
+}
+.fp-index-noteslist li a p:before, .hotNoteTag-title:before{
+	width: 4px;
+    background-color: #4ABDCC;
+    height: 14px;
+    border-radius: 40px;
+    display: inline-block;
+    content: '';
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.fp-idnex-note-disp{
+	font-size: 10px;
+	color: #fff;
+	/*display: block;*/
+	line-height: 18px;
+	margin-right: 6px;
+}
+.fp-idnex-note-writer{
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
+	width: calc(100% - 30px);
+	height: 40px;
+}
+.fp-idnex-note-writer .fp-userpic-box{
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	/*background: url(../img/cbd.jpg) no-repeat center center;*/
+	background-size: cover !important;
+}
+.fp-idnex-note-writer > span{
+	position: absolute;
+	left: 45px;
+	bottom: 11px;
+	font-size: 12px;
+	line-height: 12px;
+}
+
+.fp-search-input{
+	height: 30px;
+	line-height: 30px;
+	width: 0;
+	display: none;
+	background-color: rgba(0,0,0,.1);
+	border-radius: 4px;
+	/*float: left;*/
+	margin-top: 17px;
+	border: none;
+	color: #FFF;
+	padding-left: 12px;
+	user-select: text;
+}
+
+.fp-index-edit-btn{
+	position: absolute;
+	top: -35px;
+	right: -5px;
+	background-color: #4ABDCC;
+	display: none;
+	width: 80px;
+	height: 26px;
+	line-height: 26px;
+	font-size: 12px;
+	border-radius: 8px;
+	color: #FFF;
+}
+.hotNoteTag, .hotNoteTag-title{
+	color: #FFF;
+	text-shadow: 1px 1px 3px #111;
+	position: absolute;
+	z-index: 9999;
+	top: 20px;
+	left: 20px;
+	font-size: 16px;
+}
+.hotNoteTag-title{
+	top: 50px;
+}
+
+.mui-slider-item > a{
+	height: 100%;
+	background-size: cover !important;
+}
+::-webkit-input-placeholder {
+	color: #FFF; 
+} 

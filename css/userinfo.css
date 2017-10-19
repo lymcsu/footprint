@@ -1,0 +1,51 @@
+body, .mui-content, .fp-userinfo-input, .mui-table-view{
+	background-color: rgb(250, 245, 245);
+}
+.fp-userinfo-input label,.fp-userinfo-input a,.fp-userinfo-input input{
+	font-size: 14px;
+}
+
+.mui-input-row label{
+	color: #999;
+	height: 40px;
+	line-height: 20px;
+}
+.mui-input-row label~input{
+	color: #666;
+}
+.mui-navigate-right{
+	color: #999 !important;
+}
+.fp-userinfo-finishbtn{
+	width: 44px;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	font-size: 14px;
+}
+.userpic-bg{
+	height: 150px;
+	line-height: 220px;
+	text-align: center;
+	position: relative;
+}
+
+.fp-userpic-box{
+	width: 80px;
+	height: 80px;
+	display: inline-block;
+}
+.gender-divider{
+	height: 40px;
+	line-height: 40px;
+	padding-left: 15px;
+}
+.changePicTips{
+	width: 100%;
+    position: absolute;
+    bottom: 10px;
+    height: 20px;
+    text-align: center;
+    font-size: 10px;
+    line-height: 20px;
+}

@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="fonts/iconfont.css" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/newnotes.css" />
+		<link rel="stylesheet" href="css/imageViewer.css" />
+		<link rel="stylesheet" href="css/app.css" />
+		<link href="css/mui.picker.css" rel="stylesheet" />
+		<link href="css/mui.poppicker.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<header class="fp-newnotes-head mui-bar-transparent">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<span id="showCityPicker" class="fp-newnotes-finishbtn">完成</span>
+		</header>
+		<div class="fp-newnotes-foot">
+			<a class="fp-newnotes-foot-text"><i class="iconfont icon-text"></i>文字</a>
+			<a class="fp-newnotes-foot-camera"><i class="iconfont icon-camera"></i></a>
+			<a class="fp-newnotes-foot-gallery"><i class="iconfont icon-gallery"></i>相册</a>
+		</div>
+		<div>
+			<div class="fp-newnotes-cover">
+				<div class="clear-fix">
+					<div class="fp-userpic-box">
+						<img class="fp-userpic-img" src="" />
+					</div>
+					<p class="fp-newnotes-cover-title"><input id="fp-newnotes-title-input" type="text" value="点击输入标题" ></p>
+				</div>
+			</div>
+			<div class="fp-newnotes-content">
+				<div id="mc"></div>
+				<ul class="fp-newnotes-content-imglist mui-content-padded">
+				</ul>
+			</div>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script src="js/mui.zoom.js"></script>
+		<script src="js/mui.previewimage.js"></script>
+		<script src="js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=9MUD7wxZW9b2PGTTbVrtXWEtFLc2mdwZ"></script>
+		<script src="js/common.js"></script>
+		<script src="js/exif.js"></script>
+		<script src="js/newnotes.js"></script>
+		<script src="js/mui.picker.js"></script>
+		<script src="js/mui.poppicker.js"></script>
+		<script src="js/city.data.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init();
+			mui.previewImage();
+		</script>
+	</body>
+
+</html>

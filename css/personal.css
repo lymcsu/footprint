@@ -1,0 +1,198 @@
+.fp-personal-header {
+	width: 100%;
+	height: 44px;
+	line-height: 44px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 11;
+}
+
+.fp-personal-header-backbtn,
+.fp-personal-header-morebtn {
+	float: left;
+	width: 50px;
+	height: 44px;
+	text-align: center;
+	line-height: 44px;
+	color: #fff;
+}
+
+.fp-personal-header-morebtn {
+	float: right;
+	position: relative;
+}
+
+.fp-personal-wrap {
+	height: 280px;
+	background: url(../img/shh.jpg) no-repeat center center;
+	position: relative;
+	background-size: cover !important;
+}
+
+.fp-personal-wrap-userinfo {
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+	padding: 50px 0;
+	line-height: 3.5;
+}
+
+.fp-personal-wrap-userinfo-line_1 {
+	text-align: center;
+}
+
+.fp-userpic-box {
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.fp-personal-wrap-userinfo-fans,
+.fp-personal-wrap-userinfo-follows {
+	font-size: 18px;
+	color: #fff;
+	margin: 0 25px;
+}
+
+.fp-personal-wrap-userinfo-fans:after {
+	content: "粉丝";
+	font-size: 12px;
+	color: #eee;
+	margin-left: 5px;
+}
+
+.fp-personal-wrap-userinfo-follows:after {
+	content: "关注";
+	font-size: 12px;
+	color: #eee;
+	margin-left: 5px;
+}
+
+.fp-personal-wrap-userinfo-username {
+	color: #fff;
+	font-size: 20px;
+}
+
+.fp-personal-wrap-userinfo-btn {
+	width: 80px;
+	height: 30px;
+	display: block;
+	margin: 0 auto;
+	border-radius: 15px;
+	line-height: 30px;
+	background-color: #fff;
+	color: #333;
+	font-size: 14px;
+	position: relative;
+}
+
+.fp-personal-wrap-userinfo-btn:active {
+	background-color: #ddd;
+	color: #000;
+}
+
+.fp-personal-content {
+	padding: 10px;
+	background: #FFFDEF;
+	min-height: calc(100% - 280px);
+}
+
+.fp-personal-content h2 {
+	font-size: 16px;
+	color: #666;
+}
+
+.fp-personal-content-notelist li {
+	width: 100%;
+	height: 180px;
+	border: 8px;
+	background: url(../img/soho.jpg) no-repeat center center;
+	background-size: cover !important;
+	padding: 10px;
+	position: relative;
+	border-radius: 8px;
+	margin: 10px 0;
+}
+
+.fp-personal-content-notelist li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.fp-personal-content-notelist-title {
+	color: #fff;
+	font-size: 18px;
+}
+
+.fp-personal-content-notelist-infos {
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+	font-size: 12px;
+	color: #fff;
+}
+
+.fp-personal-content-notelist-view:after {
+	content: "次浏览";
+	margin: 0 6px;
+}
+
+.fp-personal-content-notelist-like:after {
+	content: "喜欢";
+	margin: 0 6px;
+}
+.fp-personal-content-notelist-comment:after {
+	content: "评论";
+	margin: 0 6px;
+}
+
+.fp-personal-header-morelist {
+	width: 100px;
+	background: #fff;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	border-radius: 4px;
+	z-index: 12;
+	display: none;
+}
+
+.fp-personal-header-morelist li a {
+	width: 100%;
+	height: 40px;
+	display: block;
+	line-height: 40px;
+	font-size: 12px;
+	color: #333;
+	text-align: center;
+}
+.fp-personal-closebg{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	display: none;
+}
+
+.fp-personal-wrap-userinfo-btn.follow{
+	display: none;
+}
+.fp-personal-wrap-userinfo-btn.follow.following{
+	color: lightpink;
+}
+.fp-personal-wrap-userinfo-btn.follow.following:before{
+	content: "取消";
+}
+.hotPoint{
+	width: 8px;
+	height: 8px;
+	border-radius: 4px;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	background-color: #DC143C;
+	display: none;
+}

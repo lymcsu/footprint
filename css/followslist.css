@@ -1,0 +1,14 @@
+.fp-comment-list-info-username {
+	float: left;
+}
+.fp-comment-list li{
+	padding: 15px;
+}
+.mui-icon-arrowright{
+	font-size: 18px;
+	color: #4ABDCC;
+	margin-top: 9px;
+}
+.fp-comment-list-info-username{
+	color: #666;
+}

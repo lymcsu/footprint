@@ -1,0 +1,139 @@
+.fp-editfp-finishbtn {
+	font-size: 14px;
+	margin-top: 12px;
+}
+
+.fp-editfp-content {
+	padding: 60px 15px 15px 15px;
+}
+
+.fp-editfp-content-editarea {
+	width: 100%;
+	height: 100px;
+	position: relative;
+}
+
+.fp-editfp-content-editarea-input {
+	position: relative;
+	height: 100%;
+}
+
+.fp-editfp-content-editarea textarea {
+	padding: 4px;
+	width: 100%;
+	height: 75px;
+	border: none;
+	font-size: 16px;
+	color: #666;
+}
+
+.fp-editfp-content-editarea-input.withImg {
+	margin-left: 100px;
+}
+
+.fp-editfp-content-editarea-time {
+	display: block;
+	width: 100%;
+	height: 25px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	line-height: 25px;
+	background: #e3e3e3;
+	border-bottom: 2px solid #a1a1a1;
+	color: #999;
+	font-size: 12px;
+}
+
+.fp-editfp-content-editarea-time i {
+	float: right;
+	font-size: 24px;
+	color: #666;
+}
+
+.fp-editfp-content-addgeo {
+	width: 100%;
+	height: 50px;
+	background: #fff;
+	border-bottom: 2px solid #c1c1c1;
+	display: block;
+	color: #888;
+	font-size: 16px;
+	line-height: 50px;
+	text-align: center;
+	margin-top: 20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding: 0 20px;
+}
+
+.fp-editfp-content-addgeo i {
+	color: #4ABDCC;
+	margin-right: 5px;
+	font-size: 20px;
+}
+
+.fp-editfp-content-editarea-img {
+	float: left;
+	margin-right: -100px;
+	height: 100px;
+	width: 100px;
+	overflow: hidden;
+	background-size: cover !important;
+}
+.fp-selectGeoPop{
+	font-size: 12px;
+	position: relative;
+	margin-top: 15px;
+}
+.fp-closeBtn{
+	position: absolute;
+	right: 5px;
+	top: 10px;
+	display: block;
+	width: 30px;
+	height: 15px;
+	font-size: 14px;
+	color: #4ABDCC;
+}
+#searchResultPanel {
+	border: 1px solid #C0C0C0;
+	width: 100%;
+	height: auto;
+	display: none;
+}
+
+.fp-deleteFootprint{
+	display: block;
+	background-color: #DD524D;
+	width: 120px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 15px;
+	text-align: center;
+	margin: 10px auto;
+	font-size: 14px;
+}
+.mapContainer{
+	width: 100%;
+	min-height: 120px;
+	position: relative;
+}
+.pop-cover{
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.3);
+	text-align: center;
+	position: absolute;
+	display: none;
+	font-size: 16px;
+	color: #fff;
+	line-height: 120px;
+}
+#suggestId{
+	padding-right: 40px;
+}

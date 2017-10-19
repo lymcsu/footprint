@@ -5,113 +5,28 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title></title>
-		<link href="css/reset.css" rel="stylesheet" />
 		<link href="css/mui.min.css" rel="stylesheet" />
-		<link href="css/fp-index.css" rel="stylesheet" />
-		<link href="css/fp-common.css" rel="stylesheet" />
+		<link href="css/reset.css" rel="stylesheet" />
+		<link href="css/common.css" rel="stylesheet" />
+		<link href="css/index.css" rel="stylesheet" />
 	</head>
 
 	<body>
-		<div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
-			<!-- 菜单容器 -->
-			<aside id="sideMenu" class="mui-off-canvas-left">
-				<div class="mui-scroll-wrapper">
-					<div class="mui-scroll">
-						<ul class="fp-sidemenu-list">
-							<li class="fp-sidemenu-item user-item">
-								<div>
-									<img src="img/cbd.jpg" />
-								</div>
-							</li>
-							<li class="fp-sidemenu-item active">
-								游记
-							</li>
-							<li class="fp-sidemenu-item">
-								设置
-							</li>
-						</ul>
-					</div>
-				</div>
-			</aside>
-			<!-- 主页面容器 -->
-			<div class="mui-inner-wrap">
-				<!-- 主页面标题 -->
-				<header class="mui-bar mui-bar-nav">
-					<a href="#sideMenu" class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>
-					<h1 class="mui-title">footprint</h1>
-				</header>
-				<div class="mui-content mui-scroll-wrapper">
-					<div class="mui-scroll">
-						<!-- 主界面具体展示内容 -->
-						<div class="fp-index-main">
-							<div id="slider" class="mui-slider">
-								<div class="mui-slider-group mui-slider-loop">
-									<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
-									<div class="mui-slider-item mui-slider-item-duplicate">
-										<a href="#">
-											<img src="img/yuantiao.jpg">
-										</a>
-									</div>
-									<!-- 第一张 -->
-									<div class="mui-slider-item">
-										<a href="#">
-											<img src="img/cbd.jpg">
-										</a>
-									</div>
-									<!-- 第二张 -->
-									<div class="mui-slider-item">
-										<a href="#">
-											<img src="img/muwu.jpg">
-										</a>
-									</div>
-									<!-- 第三张 -->
-									<div class="mui-slider-item">
-										<a href="#">
-											<img src="img/shuijiao.jpg">
-										</a>
-									</div>
-									<!-- 第四张 -->
-									<div class="mui-slider-item">
-										<a href="#">
-											<img src="img/yuantiao.jpg">
-										</a>
-									</div>
-									<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
-									<div class="mui-slider-item mui-slider-item-duplicate">
-										<a href="#">
-											<img src="img/cbd.jpg">
-										</a>
-									</div>
-								</div>
-								<div class="mui-slider-indicator">
-									<div class="mui-indicator mui-active"></div>
-									<div class="mui-indicator"></div>
-									<div class="mui-indicator"></div>
-									<div class="mui-indicator"></div>
-								</div>
-							</div>
-							<ul class="fp-index-noteslist">
-								<li>
-									<a id="test" href="travels.html"><img src="img/muwu.jpg" /></a>
-								</li>
-								<li>
-									<a href="javascrpt:;"><img src="img/shuijiao.jpg" /></a>
-								</li>
-								<li>
-									<a href="javascrpt:;"><img src="img/yuantiao.jpg" /></a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="mui-off-canvas-backdrop"></div>
-			</div>
-		</div>
+
+		<header class="mui-bar mui-bar-nav">
+			<a href="javascript:;" class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>
+			<a id="placeSearch" href="javascript:;" class="mui-icon mui-icon-search mui-pull-right"></a>
+			<h1 class="mui-title">
+				<span class="fp-index-title">有迹</span>
+				<input class="fp-search-input" placeholder="输入目的地">
+			</h1>
+
+		</header>
 		<script src="js/mui.min.js"></script>
+		<script src="js/jquery-1.11.0.js"></script>
+		<script src="js/common.js"></script>
 		<script src="js/index.js"></script>
 		<script>
-			mui.init();
-			mui('.mui-content').scroll();
 		</script>
 	</body>
 

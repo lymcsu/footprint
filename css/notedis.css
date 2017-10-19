@@ -1,0 +1,208 @@
+.mui-content{
+	position: relative;
+}
+.fp-travels-head {
+	width: 100%;
+	background: rgb(250, 245, 235);
+	position: relative;
+	z-index: 2;
+	border-bottom: 1px solid #ccc;
+}
+#fp_header a{
+	color: #999;
+}
+.fp-travels-navbtn{
+	height: 44px;
+	width: 46px;
+	float: right;
+	line-height: 44px;
+	text-align: center;
+	margin-right: 8px;
+}
+.fp-travels-navbtn i{
+	font-size: 22px;
+	color: #999;
+}
+.fp-travels-head-track {
+	width: 100%;
+	height: 190px;
+}
+
+.fp-travels-head-track-top {
+	width: 100%;
+	height: 190px;
+	z-index: 2;
+	background: url(../img/play.png) no-repeat center center;
+	background-size: 45px 45px;
+	position: absolute;
+	top: 0;
+}
+
+.fp-travels-head-track-userpic {
+	width: 70px;
+	height: 70px;
+	border-radius: 35px;
+	position: absolute;
+	top: 155px;
+	left: 50%;
+	margin-left: -35px;
+	border: 2px solid rgba(240, 240, 240, 0.8);
+	background-size: cover !important;
+	z-index: 99;
+}
+.fp-travels-head-track-username{
+	margin-top: 40px;
+	color: #999;
+	text-align: center;	
+	font-size: 12px;
+}
+.fp-travels-head-track-username i{
+	margin-right: 6px;
+}
+.fp-travels-head-maininfo {
+	text-align: center;
+	padding: 10px 30px 0;
+}
+
+.fp-travels-head-maininfo h2 {
+	font-size: 22px;
+	text-shadow: 2px 2px 2px #999;
+	color: #666;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e3e6eb;
+}
+
+.fp-travels-head-maininfo ul {
+	list-style: none;
+	width: 100%;
+	margin: 10px auto;
+	display: flex;
+}
+
+.fp-travels-head-maininfo ul li {
+	display: inline-block;
+	flex: 1;
+	border-left: 1px solid #e3e6eb;
+}
+.fp-travels-head-maininfo ul li:first-child{
+	border: none;
+}
+.fp-travels-head-maininfo ul li p {
+	color: #000;
+	font-size: 14px;
+	margin: 0;
+}
+
+.fp-travels-head-maininfo ul li span {
+	font-size: 12px;
+	color: #999;
+}
+.fp-card {
+	font-size: 14px;
+	position: relative;
+	margin: 20px 10px;
+	border-radius: 2px;
+	background-color: #fff;
+	background-clip: padding-box;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+}
+
+.fp-card.fp-card-first {
+	margin-top: 50px;
+}
+
+.fp-card-img {
+	overflow: hidden;
+}
+
+.fp-card-img img {
+	width: 100%;
+}
+
+.fp-card-cont {
+	padding: 5px 15px;
+}
+
+.fp-card-info {
+	padding: 0 15px 5px;
+	font-size: 14px;
+}
+
+.fp-card-cont p {
+	margin: 0;
+	color: #333;
+}
+
+.fp-card-info-time {
+	color: #8f8f94;
+	float: left;
+	width: 100px;
+}
+
+.fp-card-info-loc {
+	float: right;
+	background: #eaeaea;
+	padding: 0 14px;
+	border-radius: 14px;
+	color: #4abdcc;
+	max-width: calc(100% - 100px);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.fp-card-line {
+	width: 4px;
+	background: #F29F3F;
+	position: absolute;
+	left: 20px;
+	top: 0;
+	bottom: 0;
+}
+
+.fp-card-node {
+	position: absolute;
+	left: 5px;
+	top: -30px;
+	font-size: 14px;
+	line-height: 14px;
+}
+
+.fp-card-node i {
+	border-radius: 7px;
+	width: 14px;
+	height: 14px;
+	float: left;
+	background: #fff;
+	box-shadow: 0 0 0 3px #F29F3F inset;
+	margin-right: 8px;
+}
+
+.fp-card-node span {
+	color: #000;
+}
+
+.playBtn{
+	display: block;
+	position: fixed;
+	bottom: 50px;
+	left: 50%;
+	width: 60px;
+	height: 60px;
+	margin-left: -30px;
+	text-align: center;
+	line-height: 60px;
+	z-index: 9999;
+	color: #888;
+	font-size: 60px;
+	background-color: rgba(255,255,255,0.6);
+	border-radius: 50%;
+}
+
+.collecting{
+	color: #f17c67 !important;
+}
+
+.BMap_Marker > div{
+	border-radius: 50% !important;
+}

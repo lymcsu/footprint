@@ -1,0 +1,45 @@
+.fp-comment-list li {
+	padding: 15px 15px 5px;
+	border-bottom: 1px solid #E1e6eb;
+}
+
+.fp-userpic-box {
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	margin-right: -50px;
+	line-height: 40px;
+	float: left;
+}
+.fp-userpic-box img.wider {
+	width: auto;
+	height: 100%;
+}
+.fp-userpic-box img.higher{
+	width: 100%;
+	height: auto%;
+}
+.fp-comment-list-info {
+	margin-left: 56px;
+}
+
+.fp-comment-list-info-cont {
+	color: #333;
+	margin: 0;
+	font-size: 14px;
+}
+
+.fp-comment-list-info-username {
+	width: 80%;
+	color: #4ABDCC;
+	font-size: 16px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.fp-comment-list-info-time {
+	font-size: 12px;
+	color: #999;
+	float: right;
+}
